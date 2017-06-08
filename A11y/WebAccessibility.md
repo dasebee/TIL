@@ -2,6 +2,7 @@
 
 udacity의 웹 접근성 강의 공부 : <https://classroom.udacity.com/courses/ud891>
 
+--------------------
 ## Lesson 1 - Overview
 ### 1.Introduction to Accessibillity.
 + Accessibility → A11y (A와 y사이의 글자가 11개)
@@ -35,3 +36,33 @@ __4가지 핵심 원칙__
 WCAG2.0 <https://www.w3.org/TR/WCAG20/>
 
 Web Aim Checklist for WCAG 2.0 <http://webaim.org/standards/wcag/checklist>
+
+-------------
+## Lesson 2 - Focus
+
+### 1. Introduction to Focus
++ 포터스는 키보드에서 입력을 받아서 컴퓨터 스크린을 컨트롤 한다. 
++ Tab 키를 눌러 포커스를 이동할 수 있다. 
++ 어떤 사용자들은 컴퓨터를 오로지 키보드로를 통해서만 이용하는데, 이러한 사용자들에게 포커스는 매우 중요하다. 
++ 기능을 키보드를 사용하여 알려진 방법으로 수행할 수 없는 경우를 제외하고 키보드를 사용하여 모든 페이지 기능을 사용할 수 있어야 한다 
+
+### 2. What is Focus
++ Tab으로 포커스가 다음으로 이동 Shift + Tab으로 포커스가 이전으로 이동한다.
++ 키보드의 화살표로 구성요소의 포커스를 이동할 수 있다. 
++ Tab Order : Tab키로 포커스가 이동하는 순서, 논리적인 Tab Order는 중요하다!
++ input, button, select 요소는 자동으로 Tab Order와 키보드 이벤트 핸들링이 포함된다.(포커스 가능하다.)
+
+### 3. DOM Order Matters
++ native요소들은 자신의 DOM position에 맞게 자동으로 tab order가 삽입된다.
++ CSS로 DOM Position과 다른 순서로 화면에 표시하여도 Tab order는 변하지 않는다. 이 것은 Tab이 순서없이 움직이는 것 처럼보여서 키보드로 이용하는 사용자에게 혼란을 야기시킬 수 있기 때문에 주의가 필요하다. 
++ WebAIM checklist 1.3.2 에 __(코드 순서에 따라 결정되는) 읽기 및 탐색 순서는 논리적이고 직관적입니다.__ 라고 명시되어 있다. 
+
+### 4. Using Tabindex
++ Tabindex는 Html의 어느 요소에나 적용할 수 있다.
++ tabindex="-1" : TabOrder에 들어가지 않지만 focus()메서드를 통해서 포커스될 수 있다. 사용자의 이벤트에 의해서 화면에 나타나는 콘텐츠에 유용하다. 
++ tabindex="0" : 자연스러운 TabOrder.이 또한 focus()메서드로 포커스될 수 있다. 
++ tabindex="5" : DOM의 위치와 상관없이 앞의 tab order를 뛰어넘는다. 선형 방식으로 DOM을 탐색하는 스크린 리더 사용자가 혼란스러워할 가능성이 있다. Tab 순서를 빨리하고 싶으면 DOM의 위치를 변경하라.
+
+### 5. Deciding whats in focus 
++ tabindex는 사이트의 콘텐츠가 아닌 상호작용하는 요소들(예: 버튼, 드롭다운, 입력상자등)에 추가해야한다. 
+
