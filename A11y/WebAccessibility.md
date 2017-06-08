@@ -66,3 +66,52 @@ Web Aim Checklist for WCAG 2.0 <http://webaim.org/standards/wcag/checklist>
 ### 5. Deciding whats in focus 
 + tabindex는 사이트의 콘텐츠가 아닌 상호작용하는 요소들(예: 버튼, 드롭다운, 입력상자등)에 추가해야한다. 
 
+### 6. Skip Links 
++ 보통 웹사이트에서 메인 콘텐츠는 DOM의 첫번째 요소가 아니기 때문에 키보드로 컨트롤하는 사용자는 메인 콘텐츠로 가기 전에 부수적인 내용들(네비게이션 같은)을 모두 탭을 해서 거쳐야만 한다.
++ 이 문제는 링크를 통해서 사용자가 바로 페이지의 메인 콘텐츠로 점프!할 수 있도록 하여 해결할 수 있다. (페이지에 접속하여 처음 탭을 눌렀을 때 메인 컨텐츠로 넘어 갈 것인지 물어보는 링크가 뜨도록 해주는 것)
+    ```html
+        <a href="#maincontent" class="skip-link">
+        Skip to main content</a>
+        <!--skiplink는 nav 이전에-->
+        <nav>
+        </nav>
+        <!--main content의 id로 skip link를 연결한다-->
+        <main id = "maincontent" tabindex ="-1">
+        </main>
+    ```
+
+    ```css
+        .skip-link{
+            position: absolute;
+            <!--링크가 화면 밖으로 나가게한다.-->
+            top : -40px;
+            left: 0;
+            background: #BF1722;
+            color: white;
+            padding: 8px;
+            z-index: 100;
+        }
+        .skip-link:focus{
+            <!--포커스 받았을 때 화면에 표시되게한다.-->
+            top:0;
+        }
+    ```
++ 참고
+
+    <https://developers.google.com/web/updates/2016/03/focus-start-point?hl=en>
+    
+    <http://webaim.org/techniques/skipnav/>
+
+### 7. Focus in Complex Components
++ ARIA Authoring Practices(ARIA Design Pattern)에서 Complex Componets(복잡한 구성요소?)가 어떤 종류의 키보드 지원을 구현해야 하는지 파악할 수 있다.
++ 참고 
+   WAI-ARIA Authoring Practices 1.1 : <https://www.w3.org/TR/wai-aria-practices-1.1/>
+
+### 8. Offscreen Content
++ 숨어있는 콘텐츠가 있는 경우 탭을 눌렀을 때, 숨어있는 영역안에서 계속해서 포커스가 움직일 가능성이 있다. (사용자는 포커스가 어디에 있는지 모른채)
++ console에 `document.activeElement`를 입력하여 포커스가 어디에 있는지 확인 할 수 있다. 
++ Accessibility Developer Tools: Audits 패널에서 Accessibility 옵션을 추가, 페이지의 접근성 문제를 빠르게 찾을 수 있다.   <https://chrome.google.com/webstore/detail/accessibility-developer-t/fpkknkljclfencbdbgkenhalefipecmb?hl=en> 
+
+### 9. Modals and Keyboard Traps 
++ WebAIM checklist items: 2.1.2: 키보드 포커스는 특정한 페이지 요소에 잠기거나 갇혀서는 안된다. 사용자는 키보드 만 사용하여 탐색 가능한 모든 페이지 요소를 탐색 할 수 있어야 한다. <http://webaim.org/standards/wcag/checklist#sc2.1.2>
+
