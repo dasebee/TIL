@@ -2,42 +2,42 @@
 ## 변경자 메소드 
 변경자 메소드는 배열을 수정한다. 
 
-1. array.pop() : 배열에서 마지막 요소를 삭제하고 그 요소를 반환.
+1. Array.prototype.pop() : 배열에서 마지막 요소를 삭제하고 그 요소를 반환.
 ```javascript
     var arr = ["a","b","c"];
     arr.pop(); //반환값 "c";
     console.log(arr); // ["a","b"]
 ```
 
-2. array.push() : 배열의 끝에 하나 이상의 요소를 추가하고 새로운 길이를 반환.
+2. Array.prototype.push() : 배열의 끝에 하나 이상의 요소를 추가하고 새로운 길이를 반환.
 ```javascript
     var arr = ["a","b"];
     arr.push("c"); //반환값 3;
     console.log(arr); // ["a","b","c"]
 ```
 
-3. array.reverse() : 배열의 요소 순서를 반전.
+3. Array.prototype.reverse() : 배열의 요소 순서를 반전.
 ```javascript
     var arr = ["a","b","c"];
     arr.reverse(); 
     console.log(arr); // ["c","b","a"]
 ```
 
-4. array.shift() : 배열에서 첫 번째 요소를 삭제하고 그 요소를 반환.
+4. Array.prototype.shift() : 배열에서 첫 번째 요소를 삭제하고 그 요소를 반환.
 ```javascript
     var arr = ["a","b","c"];
     arr.shift(); //반환값 "a"
     console.log(arr); // ["b","c"]
 ```
 
-5. array.sort() : 배열의 요소를 정렬하고 그 배열을 반환.
+5. Array.prototype.sort() : 배열의 요소를 정렬하고 그 배열을 반환.
 ```javascript
     var arr = ["c","b","a"];
     arr.sort(); //반환값 ["a","b","c"]
     console.log(arr); // ["a","b","c"]
 ```
 
-6. array.splice() : 배열에서 요소를 추가/삭제하고 삭제된 요소들의 배열을 반환(삭제된 요소가 없는 경우 빈 배열을 반환)
+6. Array.prototype.splice() : 배열에서 요소를 추가/삭제하고 삭제된 요소들의 배열을 반환(삭제된 요소가 없는 경우 빈 배열을 반환)
 
     `array.splice(start, deleteCount[, item1[, item2[, ...]]])`
 
@@ -57,7 +57,7 @@
 ## 접근자 메서드
 배열을 수정하지 않고 배열 일부를 반환한다.
 
-1. array.concat() : 배열/값을 결합해 새로운 배열을 반환.
+1. Array.prototype.concat() : 배열/값을 결합해 새로운 배열을 반환.
 ```javascript
     var arr1 = ['a','b','c'];
     var arr2 = ['d','e','f'];
@@ -67,13 +67,13 @@
     console.log(arr1) //["a", "b", "c", "d", "e", "f", "g", "h", "i"]
 ```
 
-2. array.join() : 배열의 모든 요소를 문자열로 변환하여 합친다. 
+2. Array.prototype.join() : 배열의 모든 요소를 문자열로 변환하여 합친다. 
 ```javascript
     var array=["a","b","c"];
     array.join() //"a,b,c"
 ```
 
-3. array.slice() : 배열의 일부를 추출한 새 배열을 반환.
+3. Array.prototype.slice() : 배열의 일부를 추출한 새 배열을 반환.
 
     `array.slice([begin[, end]])`
 
@@ -88,7 +88,7 @@
     array.slice(2,4); //["c", "d"]
 ```
 
-4. array.toString() : 지정된 배열 및 그 요소를 나타내는 문자열을 반환.
+4. Array.prototype.toString() : 지정된 배열 및 그 요소를 나타내는 문자열을 반환.
 ```javascript
     var array=["a","b","c"];
     array.toString(); //"a,b,c"
