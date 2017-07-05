@@ -19,7 +19,11 @@
 + [드래그 이벤트 관련 속성]('./JavaScript/drag_events.md')
 + [let]('./JavaScript/let.md')
 + [배열 메서드]('./JavaScript/array_method.md')
-+ [0627수업(cloneNode, forEach, classList)]('./JavaScript/0627Lecture.md')
+
+## LECTURE
++ [0627수업]('./FDS_LECTURE/0627.md') : cloneNode, forEach, classList
++ [0705수업]('./FDS_LECTURE/0705.md') : JSON, event ,REST API
+
 
 
 ## SASS

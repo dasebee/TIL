@@ -50,7 +50,7 @@
 ### Attribute
 
 + `colspan` : 가로 방향으로 셀을 합치는 개수를 지정
-+ `rowspan`:  새로 방향으로 셀을 합치는 개수를 지정
++ `rowspan`:  세로 방향으로 셀을 합치는 개수를 지정
 + `border`  : 테이블 테두리의 굵기를 지정
 + `width`,  `height` : 너비와 높이를 지정 (픽셀이나 %)
 + `cellpadding` : 셀과 경계선 사이의 여백
@@ -59,4 +59,9 @@
 + `valign` : 셀의 내용의 수직방향 정렬(top, middle, bottom)
 + `bgcolor` : 배경색 지정
 + `bordercolor` : 테두리 색 지정
+
+### CSS
++ `border-collapse` : 테이블 또는 셀의 테두리선 표시방법을 지정하는 속성
+    + collapse : 서로 이웃하는 테이블이나 셀의 테두리선을 겹쳐서 표현.
+    + separate : 기본값으로 서로 이웃하는 테이블이나 셀의 테두리선을 분리시켜 표현.
 
