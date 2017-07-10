@@ -36,4 +36,5 @@
 
 + [Labeling Controls](./A11y/Labeling_Controls.md) : label, aria-label, aria-labelledby, title
 + [Grouping Controls](./A11y/Grouping_Controls.md) : fieldset, legend, role = group, optgroup
-+ [Form Instructions](./A11y/Form_Instructions.md) : labe, aria-labelledby, aria-describedby, placeholder
++ [Form Instructions](./A11y/Form_Instructions.md) : label, aria-labelledby, aria-describedby, placeholder
++ [Validating Input](./A11y/Validating_Input.md) : required, aria-required="true", type, pattern
