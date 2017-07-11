@@ -20,6 +20,9 @@
 + [let](./JavaScript/let.md)
 + [배열 메서드](./JavaScript/array_method.md)
 
+#### jQuery
++ [jQuery](./JavaScript/jQuery.md)
+
 ## LECTURE
 + [0627수업](./FDS_LECTURE/0627.md) : cloneNode, forEach, classList
 + [0705수업](./FDS_LECTURE/0705.md) : JSON, event ,REST API
@@ -32,7 +35,7 @@
 ## A11Y
 + [udacity:A11y(Lesson1:overview & Lesson2:Focus)](./A11y/WebAccessibility.md)
 
-### Form
+#### Form
 
 + [Labeling Controls](./A11y/Labeling_Controls.md) : label, aria-label, aria-labelledby, title
 + [Grouping Controls](./A11y/Grouping_Controls.md) : fieldset, legend, role = group, optgroup
