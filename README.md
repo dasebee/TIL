@@ -17,8 +17,9 @@
 + [자바스크립트 완벽 가이드 - 객체 파트](./JavaScript/object.md)
 + [자바스크립트 완벽 가이드 - 함수 파트](./JavaScript/function.md)
 + [드래그 이벤트 관련 속성](./JavaScript/drag_events.md)
-+ [let](./JavaScript/let.md)
 + [배열 메서드](./JavaScript/array_method.md)
++ [let](./JavaScript/let.md)
++ [this](./JavaScript/this.md)
 
 #### jQuery
 + [jQuery](./JavaScript/jQuery.md)
