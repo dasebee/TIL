@@ -135,7 +135,7 @@ $( "div.tumble" ).toggleClass( "bounce" )
    `$( "#mydiv" ).css( "color", "green" )` 와 `document.getElementById( "mydiv" ).style.color = "green"`는 동일 하다.
 
    +  `+=` 나 `-=` 로 값을 증가, 감소 시킬 수 있다. `.css("padding-left", "+=15" )`
-   + 함수를 인자로 받을 수 있다. 
+   +  함수를 인자로 받을 수 있다. 
 
    ```javascript
    $( "div.example" ).css( "width", function( index ) {
@@ -180,3 +180,8 @@ $( ".target" ).hide(); // == $(".target").css("display", "none")
 
 ----------
 
+## Traversing 
+
+### find()
+
+DOM 요소 집합을 나타내는 jQuery 객체가 주어지면 .find () 메서드를 사용하여 DOM 트리에서 이러한 요소의 자손을 검색하고 일치하는 요소에서 새 jQuery 객체를 생성 할 수 있습니다.
