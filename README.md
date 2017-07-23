@@ -12,30 +12,34 @@
 + [Table 관련 태그와 속성](./HTML_CSS/table.md)
 + [Transition 속성](./HTML_CSS/transition.md)
 
++ [susy 기본 사용법](./SASS/susy.md)
+
+------------
 
 ## JavaScript
+
 + [자바스크립트 완벽 가이드 - 객체 파트](./JavaScript/object.md)
 + [자바스크립트 완벽 가이드 - 함수 파트](./JavaScript/function.md)
 + [드래그 이벤트 관련 속성](./JavaScript/drag_events.md)
 + [배열 메서드](./JavaScript/array_method.md)
 + [let](./JavaScript/let.md)
 + [this](./JavaScript/this.md)
++ [Ajax](./JavaScript/Ajax.md)
 
-#### jQuery
 + [jQuery](./JavaScript/jQuery.md)
+
+------------
 
 ## LECTURE
 + [0627수업](./FDS_LECTURE/0627.md) : cloneNode, forEach, classList
 + [0705수업](./FDS_LECTURE/0705.md) : JSON, event ,REST API
 
 
-## SASS
-+ [susy 기본 사용법](./SASS/susy.md)
-
+-------------
 
 ## A11Y
 + [udacity:A11y(Lesson1:overview & Lesson2:Focus)](./A11y/WebAccessibility.md)
-+ [WAI-ARIA)](./A11y/WAI-ARIA.md)
++ [WAI-ARIA](./A11y/WAI-ARIA.md)
 
 #### Form
 
@@ -45,5 +49,8 @@
 + [Validating Input](./A11y/Validating_Input.md) : required, aria-required="true", type, pattern
 + [User Notifications](./A11y/User_Notifications.md) 
 
+---------------------
+
 ## ETC
+
 + [인터넷 입문](./ETC/internet-works-intro.md) 
