@@ -30,13 +30,6 @@
 
 ------------
 
-## LECTURE
-+ [0627수업](./FDS_LECTURE/0627.md) : cloneNode, forEach, classList
-+ [0705수업](./FDS_LECTURE/0705.md) : JSON, event ,REST API
-
-
--------------
-
 ## A11Y
 + [udacity:A11y(Lesson1:overview & Lesson2:Focus)](./A11y/WebAccessibility.md)
 + [WAI-ARIA](./A11y/WAI-ARIA.md)
