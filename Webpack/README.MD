@@ -7,6 +7,7 @@
 1. [Webpack 소개](./inflearn_lecture/Webpack1.md)
 2. [Webpack Entry](./inflearn_lecture/Webpack2.md)
 3. [Webpack Output](./inflearn_lecture/Webpack3.md)
+4. [Webpack Loader](./inflearn_lecture/Webpack4.md)
 
 
 부록. [Webpack을 위한 NPM 소개](./inflearn_lecture/about_npm.md)
