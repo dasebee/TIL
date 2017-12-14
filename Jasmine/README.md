@@ -1,8 +1,3 @@
-# Jasmine 자바스크립트 테스팅
+# Jasmine
 
-[Jasmine 자바스크립트 테스팅] 책으로 공부하기!
-
-----------
-
-1. [재스민 시작](./1.md)
-2. [스펙 작성](./2.md)
++ [Jasmine 자바스크립트 테스팅](./JasmineJavascriptTesting) - [Jasmine 자바스크립 테스팅] 책으로 공부하기
