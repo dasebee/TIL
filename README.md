@@ -1,6 +1,6 @@
 # TIL
 
-#### 오늘 공부한 내용을 정리
+#### 공부한 내용을 정리
 ----------------
 
 + [HTML](./HTML)
@@ -9,7 +9,7 @@
 + [A11y](./A11y)
 + [Vue](./Vue)
 + [React](./React)
-+ [Jasmine](.Jasmine)   
++ [TDD](./TDD)   
 + [Webpack](./Webpack)
 + [ETC](./ETC)
 
